@@ -1,0 +1,28 @@
+.main > div {
+	background: #F5F5F5;
+}
+.main .member-login{
+	width: 1000px;
+	height: 650px;
+	margin: 0 auto;
+	margin-top: 50px;
+	
+}
+/*640 250*/
+.main .member-login .loginbg{
+	height: 250px;
+	padding: 15px 10px;
+	background: url(../img/loginbg.jpg) no-repeat 11px 15px;
+	background-color: #fff;
+}
+.main .member-login .loginbg > form{
+	margin: 20px 50px 0px 0px;
+}
+.main .member-login .loginbg .identify-code{
+	width: 100px;
+}
+.main .member-login .loginbg .layui-btn{
+	background: #006E53;
+	width: 100px;
+    margin-left: 50px;
+}

@@ -1,0 +1,117 @@
+.main .content .lt-ctent{
+	width: 100%;
+	height: 800px;
+}
+.main .content .nav-list .layui-nav {
+	background: #fff;
+	width: 260px;
+	height: 800px;
+	overflow: auto;
+}
+.main .content .nav-list .layui-nav > span{
+	display: none;
+}
+.main .layui-nav .layui-nav-item a {
+	font-size: 18px;
+	color: #333!important;
+}
+.main .nav-list .layui-nav-itemed>a{
+	background-color: #fff!important;
+    color: #333!important;
+}
+.main .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #006e53!important;
+     color: #fff!important;
+}
+.main .layui-nav-tree .layui-nav-itemed>a:hover{
+    color: #fff!important;
+}
+.main .nav-list .layui-nav-tree .layui-nav-bar{
+	background: #006e53;
+}
+.main .layui-nav-tree .layui-this>a{
+	background: #006e53;
+	color: #fff!important;
+}
+.main .layui-nav-tree .layui-nav-child a{
+	font-size: 16px;
+}
+/**/
+.main .content .list-det{
+	position: relative;
+	box-sizing: border-box;
+	width: 720px;
+	height: 800px;
+	background: #fff;
+	padding: 20px 10px;
+}
+.main .content .list-det ul.lists li{
+	height: 40px;
+	padding: 0px 20px;
+}
+.main .content .list-det ul.lists  li:nth-child(odd){
+	background: #f5f5f5;
+}
+.main .content .list-det li a{
+	display: block;
+	height: 40px;
+}
+.main .content .list-det li span{
+	line-height: 40px;
+	color: #333;
+	font-size: 16px;
+} 
+.main .content .list-det li span:first-child{
+	display: inline-block;
+	width: 480px;
+	overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main .content .list-det li span:last-child{
+	float: right;
+}
+.main .content .list-det .page{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+}
+#page-list{
+	text-align: center;
+}
+.main .content .cultrue-tab {
+	margin: 0px;
+}
+.cultrue-tab .layui-tab-title li{
+	font-size: 18px;
+}
+.cultrue-tab.layui-tab-brief>.layui-tab-title .layui-this:after{
+	border-bottom: 3px solid #006e53;
+}
+.cultrue-tab.layui-tab-brief>.layui-tab-title .layui-this{
+	color: #006e53 ;
+}
+.cultrue-tab .lt-search{
+	position: absolute;
+	top: 25px;
+	right: 10px;
+}
+.cultrue-tab .lt-search .layui-input-inline{
+	margin-right: 0px;
+}
+.cultrue-tab .lt-search .layui-input{
+	height: 30px;
+	line-height: 30px;
+	border-right: none;
+}
+.cultrue-tab .lt-search .layui-form-mid{
+	background: #2e6b54;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	padding: 0px 13px;
+}
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>登录</title>
+		<link rel="stylesheet" href="layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="css/conmmon.css" media="all">
+		<link rel="stylesheet" href="css/albgk.css" media="all">
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<div>
+					<img class="left" src="img/logo.png" />
+					<div class="right">
+						<a>中文</a><span>|</span>
+						<a>英文</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav">
+				<div>
+					<ul class="layui-nav" lay-filter="demo">
+						<li class="layui-nav-item layui-this">
+							<a href="javascript:;">首页</a>
+						</li>
+						<li class="layui-nav-item ">
+							<a href="javascript:;">一带一路上的文化</a>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">中阿文化交流</a>
+							<dl class="layui-nav-child">
+								<!-- 二级菜单 -->
+								<dd>
+									<a href="javascript:;">中阿文化交流咨询</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">文化</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">建筑</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">学术</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">艺术</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">科技</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">体育</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">教育</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">中阿文化交往历史</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">阿拉伯国家孔子学院</a>
+							<dl class="layui-nav-child">
+								<!-- 二级菜单 -->
+								<dd>
+									<a href="javascript:;">孔院动态</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">孔院研究</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">阿拉伯国家孔子学院</a>
+								</dd>
+							</dl>
+
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">宁夏区域文化海外传播</a>
+							<dl class="layui-nav-child">
+								<!-- 二级菜单 -->
+								<dd>
+									<a href="javascript:;">宁夏传播资讯</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">人物</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">重镇</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">器物</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">宁夏文物变化与传播</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">当代宁夏与阿拉伯国家交往</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="right login">
+							<a class="sign-in" href="login.html">登录</a>
+							<a class="sign-out" href="javascript:;">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div>
+				<div class="location">
+					<span>当前位置：</span>
+					<span class="layui-breadcrumb">
+					  <a href="">阿拉伯国家概况</a>
+					</span>
+				</div>
+				<div class="content">
+					<div class="alb-map">
+						<div id="mainMap" style="width: 1000px;height: 600px;"></div>
+						<div class="country-list">
+							<ul class="left">
+								<li class="litone2">
+									<a href="">阿尔及利亚</a>
+								</li>
+								<li class="litone2">
+									<a href="">埃及</a>
+								</li>
+								<li class="litone2">
+									<a href="">吉布提</a>
+								</li>
+								<li class="litone2">
+									<a href="">利比亚</a>
+								</li>
+								<li class="litone2">
+									<a href="">毛里塔尼亚</a>
+								</li>
+								<li class="litone2">
+									<a href="">摩洛哥</a>
+								</li>
+								<li class="litone2">
+									<a href="">苏丹</a>
+								</li>
+								<li class="litone2">
+									<a href="">索马里</a>
+								</li>
+								<li class="litone2">
+									<a href="">突尼斯</a>
+								</li>
+							</ul>
+							<ul class="right">
+								<li class="litone3">
+									<a href="">阿联酋</a>
+								</li>
+								<li class="litone3">
+									<a href="">阿曼</a>
+								</li>
+								<li class="litone3">
+									<a href="">巴勒斯坦</a>
+								</li>
+								<li class="litone3">
+									<a href="">巴林</a>
+								</li>
+								<li class="litone3">
+									<a href="">卡塔尔</a>
+								</li>
+								<li class="litone3">
+									<a href="">科威特</a>
+								</li>
+								<li class="litone3">
+									<a href="">黎巴嫩</a>
+								</li>
+								<li class="litone3">
+									<a href="">沙特阿拉伯</a>
+								</li>
+								<li class="litone3">
+									<a href="">叙利亚</a>
+								</li>
+								<li class="litone3">
+									<a href="">也门</a>
+								</li>
+								<li class="litone3">
+									<a href="">伊拉克</a>
+								</li>
+								<li class="litone3">
+									<a href="">约旦</a>
+								</li>
+								<li class="litone3">
+									<a href="">科摩罗</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="fd-link">
+				<div class="fd-title">
+					<span>友情链接</span>
+					<a href="javascript:;">孔子学院</a>
+				</div>
+				<div class="fd-list">
+					<a href="javascript:;">中华人民共和国教育部</a>
+					<a href="javascript:;">中华人民共和国文化部</a>
+					<a href="javascript:;">国家新闻出版广电总局</a>
+					<a href="javascript:;">国家汉办-孔子学院总部</a>
+					<a href="javascript:;">全国哲学社会科学规划办公室</a>
+					<a href="javascript:;">中国社会科学网</a>
+					<a href="javascript:;">中国海外汉语研究中心</a>
+					<a href="javascript:;">世界汉语教学学会</a>
+					<a href="javascript:;">宁夏大学</a>
+					<a href="javascript:;">北京外国语大学</a>
+					<a href="javascript:;">北京语言大学</a>
+				</div>
+			</div>
+			<div class="ft-bg">
+				<div class="footer-content">
+					<ul>
+						<li>
+							<a>数据库简介</a>
+						</li>
+						<li>
+							<a>使用说明</a>
+						</li>
+						<li>
+							<a>关于我们</a>
+						</li>
+						<li>
+							<a>版权说明</a>
+						</li>
+					</ul>
+					<p>Copyright © 宁夏大学国际教育学院 All Rights Reserved<br />通讯地址：宁夏银川市西夏区文萃北街217号 宁夏大学国际教育学院</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/dist/echarts.js"></script>
+	<script src="layui/layui.js"></script>
+	<script src="js/albgk.js"></script>
+	<script>
+		layui.use(['element', 'jquery', 'laypage', 'layer'], function() {
+			var $ = layui.jquery,
+				laypage = layui.laypage,
+				layer = layui.layer,
+				element = layui.element();
+			element.on('nav(demo)', function(data) {
+				console.log(data);
+			});
+		});
+	</script>
+</html>

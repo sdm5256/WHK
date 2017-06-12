@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="../js/zTree/css/zTreeStyle/zTreeStyle.css" media="all">
+		<style>
+			.file-tree{
+				width: 200px;
+				height: 250px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="file-tree">
+			<div id="tree2" class="ztree left" ></div>
+		</div>
+	</body>
+	<script src="../js/zTree/js/jquery-1.4.4.min.js"></script>
+	<script src="../js/zTree/js/jquery.ztree.core.min.js"></script>
+	<script src="../js/zTree/js/jquery.ztree.exedit.min.js"></script>
+	<script src="../layui/layui.js"></script>
+	<script>
+		
+		window.onload = function() {
+			
+			layui.use(['element', 'laypage', 'layer', 'laypage', 'laydate', 'form'], function() {
+				var laypage = layui.laypage,
+					layer = layui.layer,
+					element = layui.element(),
+					laydate = layui.laydate,
+					form = layui.form();
+				
+				var setting = {
+					view: {
+						selectedMulti: false
+					},
+					edit: {
+						enable: true,
+						showRemoveBtn: false,
+						showRenameBtn: false
+					},
+					data: {
+						keep: {
+							parent:false,
+							leaf:false
+						},
+						simpleData: {
+							enable: true
+						}
+					},
+					callback: {
+						
+					}
+				};
+		
+				var zNodes =[
+					{ id:1, pId:0, name:"6", open:true, icon:"../img/file.png" },
+					{ id:11, pId:1, name:"11", icon:"../img/file.png"},
+					{ id:12, pId:1, name:"12", icon:"../img/file.png"},
+					{ id:13, pId:1, name:"13", icon:"../img/file.png"},
+					{ id:2, pId:0, name:"2", open:true, icon:"../img/file.png"},
+					{ id:21, pId:2, name:"21", icon:"../img/file.png"},
+					{ id:22, pId:2, name:"22", icon:"../img/file.png"},
+					{ id:3, pId:0, name:"3", open:true, icon:"../img/file.png"},
+					{ id:31, pId:3, name:"31", icon:"../img/file.png"}
+				];	
+				
+				$(document).ready(function(){
+					$.fn.zTree.init($("#tree2"), setting, zNodes);
+				});
+				window.getSelectNode=function(){
+					var zTree = $.fn.zTree.getZTreeObj("tree2"),
+						nodes = zTree.getSelectedNodes();
+						return nodes;	
+				}
+			});
+		}
+	</script>
+
+</html>

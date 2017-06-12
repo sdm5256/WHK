@@ -1,0 +1,59 @@
+.main .content .detail{
+	min-height: 800px;
+	padding: 40px 50px;
+	background: #fff;
+}
+.main .content .detail h5{
+	font-size: 32px;
+	text-align: center;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.main .content .detail .author{
+	color: #666;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.main .content .detail .time{
+	padding: 10px 0px 30px 0px;
+}
+.main .content .detail .font{
+	display: inline-block;	
+}
+.main .content .detail .font a{
+	padding: 0px 10px;
+}
+.main .content .detail .font a:hover{
+	cursor: pointer;
+}
+.main .content .detail .text{
+	padding: 0px 20px;
+}
+.main .content .detail .text .atical-msg span,
+.main .content .detail .text>p{
+	color: #333;
+	font-size: 16px;
+	line-height: 30px;
+}
+.main .content .detail .text>p{
+	text-indent: 2em;
+}
+.main .content .detail .text>img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.main .content .detail .text .atical-hand {
+	padding-top: 40px;
+	text-align: center;
+}
+.main .content .detail .text .atical-hand button {
+    background: #006E53;
+    margin: 0px 24px 20px 24px;
+}
+.main .content .detail .text .atical-hand .btn2{
+	background: #fff;
+	color: #006E53;
+	font-size: 16px;
+    border: 1px solid #006E53;
+}

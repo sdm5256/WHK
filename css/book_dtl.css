@@ -1,0 +1,50 @@
+.main .content .book-dtl{
+	background: #fff;
+	min-height: 500px;
+	padding: 20px;
+}
+.main .content .book-dtl .book-msg{
+	position: relative;
+	height: 260px;
+	margin-bottom: 40px;
+}
+
+.main .content .book-dtl .book-msg ul{
+	box-sizing: border-box;
+	width: 770px;
+	padding: 20px 0px 0px 30px;
+}
+.main .content .book-dtl .book-msg ul li{
+	color: #333;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.main .content .book-dtl .book-msg ul h5{
+	font-size: 24px;
+}
+.main .content .book-dtl .book-msg .author{
+	display: inline-block;
+	font-size: 16px;
+	padding-right: 16px;
+	padding-bottom: 10px;
+}
+.main .content .book-dtl .book-msg .handle-btn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1;
+}
+.main .content .book-dtl .book-msg .handle-btn button{
+	font-size: 16px;
+	border: 1px solid #006E53;
+}
+.main .content .book-dtl .book-msg .handle-btn .btn1{
+	background: #006E53;
+	margin-bottom: 20px;
+	
+}
+.main .content .book-dtl  > p{
+	text-indent: 2em;
+	font-size: 14px;
+	line-height: 26px;
+}

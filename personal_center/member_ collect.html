@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="../js/zTree/css/zTreeStyle/zTreeStyle.css" media="all">
+		<link rel="stylesheet" href="../css/conmmon.css" media="all">
+		<link rel="stylesheet" href="../css/ydyl.css" media="all">
+		<link rel="stylesheet" href="../css/member.css" media="all">
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<div>
+					<img class="left" src="../img/logo.png" />
+					<div class="right">
+						<a>中文</a><span>|</span>
+						<a>英文</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav">
+				<div>
+					<ul class="layui-nav" lay-filter="demo">
+						<li class="layui-nav-item ">
+							<a href="javascript:;">首页</a>
+						</li>
+						<li class="layui-nav-item ">
+							<a href="javascript:;">一带一路上的文化</a>
+						</li>
+						<li class="layui-nav-item layui-this">
+							<a href="javascript:;">中阿文化交流</a>
+							<dl class="layui-nav-child">
+								<!-- 二级菜单 -->
+								<dd>
+									<a href="javascript:;">中阿文化交流咨询</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">文化</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">建筑</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">学术</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">艺术</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">科技</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">体育</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">教育</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">中阿文化交往历史</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">阿拉伯国家孔子学院</a>
+							<dl class="layui-nav-child">
+								<!-- 二级菜单 -->
+								<dd>
+									<a href="javascript:;">孔院动态</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">孔院研究</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">阿拉伯国家孔子学院</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">宁夏区域文化海外传播</a>
+							<dl class="layui-nav-child">
+								<!-- 二级菜单 -->
+								<dd>
+									<a href="javascript:;">宁夏传播资讯</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">人物</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">重镇</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">器物</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">宁夏文物变化与传播</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">当代宁夏与阿拉伯国家交往</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="right login">
+							<a href="javascript:;">登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div>
+				<div class="location">
+					<span>当前位置：</span>
+					<span class="layui-breadcrumb">
+					  <a href="">个人中心</a>
+					  <a href="">我的收藏</a>
+					</span>
+				</div>
+				<div class="content">
+					<div class="lt-ctent member">
+						<div class="nav-list left">
+							<div class="header-img">
+								<img src="../img/header-img.png" />
+								<p>会员姓名</p>
+							</div>
+							<ul class="layui-nav layui-nav-tree" lay-filter="test">
+								<li class="layui-nav-item ">
+									<a href="javascript:;">会员中心</a>
+								</li>
+								<li class="layui-nav-item ">
+									<a href="javascript:;">个人信息</a>
+								</li>
+								<li class="layui-nav-item ">
+									<a href="javascript:;">修改密码</a>
+								</li>
+								<li class="layui-nav-item layui-this">
+									<a href="javascript:;">我的收藏</a>
+								</li>
+								<li class="layui-nav-item ">
+									<a href="javascript:;">检索历史</a>
+								</li>
+								<li class="layui-nav-item ">
+									<a href="javascript:;">浏览记录</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="collect right">
+							<div class="like">
+								我的收藏
+								<div class="collect-hand">
+									<a id="addLeaf" onclick="return false;">新建</a><a id="remove" onclick="return false;">删除</a>
+								</div>
+							</div>
+							<div class=" layui-clear">
+								<div id="tree" class="ztree left"></div>
+								<div class="collect-rt right">
+									<table class="layui-table ">
+										<colgroup>
+											<col>
+											<col width="120">
+											<col width="150">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>名称</th>
+												<th>收藏时间</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>人生就像是一场修行</td>
+												<td>2016-11-29</td>
+												<td class="handle">
+													<a>取消收藏</a><span>|</span>
+													<a class="dltBtn transfer" data-id='11'>转移</a>
+												</td>
+											</tr>
+											<tr>
+												<td>人生就像是一场修行</td>
+												<td>2016-11-29</td>
+												<td class="handle">
+													<a>取消收藏</a><span>|</span>
+													<a class="dltBtn transfer" data-id='12'>转移</a>
+												</td>
+											</tr>
+											<tr>
+												<td>人生就像是一场修行</td>
+												<td>2016-11-29</td>
+												<td class="handle">
+													<a>取消收藏</a><span>|</span>
+													<a class="dltBtn transfer" data-id='13'>转移</a>
+												</td>
+											</tr>
+											<tr>
+												<td>人生就像是一场修行</td>
+												<td>2016-11-29</td>
+												<td class="handle">
+													<a>取消收藏</a><span>|</span>
+													<a class="dltBtn transfer" data-id='21'>转移</a>
+												</td>
+											</tr>
+											<tr>
+												<td>人生就像是一场修行</td>
+												<td>2016-11-29</td>
+												<td class="handle">
+													<a>取消收藏</a><span>|</span>
+													<a class="dltBtn transfer" data-id='21'>转移</a>
+												</td>
+											</tr>
+											<tr>
+												<td>人生就像是一场修行</td>
+												<td>2016-11-29</td>
+												<td class="handle">
+													<a>取消收藏</a><span>|</span>
+													<a class="dltBtn transfer" data-id='31'>转移</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="page ">
+										<div id="page-list"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="fd-link">
+				<div class="fd-title">
+					<span>友情链接</span>
+					<a href="javascript:;">孔子学院</a>
+				</div>
+				<div class="fd-list">
+					<a href="javascript:;">中华人民共和国教育部</a>
+					<a href="javascript:;">中华人民共和国文化部</a>
+					<a href="javascript:;">国家新闻出版广电总局</a>
+					<a href="javascript:;">国家汉办-孔子学院总部</a>
+					<a href="javascript:;">全国哲学社会科学规划办公室</a>
+					<a href="javascript:;">中国社会科学网</a>
+					<a href="javascript:;">中国海外汉语研究中心</a>
+					<a href="javascript:;">世界汉语教学学会</a>
+					<a href="javascript:;">宁夏大学</a>
+					<a href="javascript:;">北京外国语大学</a>
+					<a href="javascript:;">北京语言大学</a>
+				</div>
+			</div>
+			<div class="ft-bg">
+				<div class="footer-content">
+					<ul>
+						<li>
+							<a>数据库简介</a>
+						</li>
+						<li>
+							<a>使用说明</a>
+						</li>
+						<li>
+							<a>关于我们</a>
+						</li>
+						<li>
+							<a>版权说明</a>
+						</li>
+					</ul>
+					<p>Copyright © 宁夏大学国际教育学院 All Rights Reserved<br />通讯地址：宁夏银川市西夏区文萃北街217号 宁夏大学国际教育学院</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/zTree/js/jquery-1.4.4.min.js"></script>
+	<script src="../js/zTree/js/jquery.ztree.core.min.js"></script>
+	<script src="../js/zTree/js/jquery.ztree.exedit.min.js"></script>
+	<script src="../layui/layui.js"></script>
+	<script>
+		window.onload = function() {
+			
+			layui.use(['element', 'laypage', 'layer', 'laypage', 'laydate', 'form'], function() {
+				var laypage = layui.laypage,
+					layer = layui.layer,
+					element = layui.element(),
+					laydate = layui.laydate,
+					form = layui.form();
+				
+				var setting = {
+					view: {
+						selectedMulti: false
+					},
+					edit: {
+						enable: true,
+						showRemoveBtn: false,
+						showRenameBtn: false
+					},
+					data: {
+						keep: {
+							parent:false,
+							leaf:false
+						},
+						simpleData: {
+							enable: true
+						}
+					},
+					callback: {
+						beforeDrag: beforeDrag,
+						beforeRemove: beforeRemove,
+						beforeRename: beforeRename,
+						onRemove: onRemove
+					}
+				};
+		
+				var zNodes =[
+					{ id:1, pId:0, name:"1", open:true, icon:"../img/file.png" },
+					{ id:11, pId:1, name:"11", icon:"../img/file.png"},
+					{ id:12, pId:1, name:"12", icon:"../img/file.png"},
+					{ id:13, pId:1, name:"13", icon:"../img/file.png"},
+					{ id:2, pId:0, name:"2", open:true, icon:"../img/file.png"},
+					{ id:21, pId:2, name:"21", icon:"../img/file.png"},
+					{ id:22, pId:2, name:"22", icon:"../img/file.png"},
+					{ id:3, pId:0, name:"3", open:true, icon:"../img/file.png"},
+					{ id:31, pId:3, name:"31", icon:"../img/file.png"}
+				];
+				var log, className = "dark";
+				function beforeDrag(treeId, treeNodes) {
+					return false;
+				}
+				function beforeRemove(treeId, treeNode) {
+					return true;
+				}
+				function onRemove(e, treeId, treeNode) {
+					return true;
+				}
+				function beforeRename(treeId, treeNode, newName) {
+					if (newName.length == 0) {
+						layer.msg("名称不能为空");
+						var zTree = $.fn.zTree.getZTreeObj("tree");
+						setTimeout(function(){zTree.editName(treeNode)}, 100);
+						return false;
+					}
+					return true;
+				}
+				//添加文件
+				var newCount = 1;
+				function add(e) {
+					var zTree = $.fn.zTree.getZTreeObj("tree"),
+					isParent = e.data.isParent,
+					nodes = zTree.getSelectedNodes(),
+					treeNode = nodes[0];
+					if (treeNode) {
+						treeNode = zTree.addNodes(treeNode, {id:(100 + newCount), pId:treeNode.id, isParent:isParent, name:"" ,icon:'../img/file.png'});
+					} else {
+						treeNode = zTree.addNodes(null, {id:(100 + newCount), pId:0, isParent:isParent, name:"",icon:'../img/file.png'});
+					}
+					if (treeNode) {
+						zTree.editName(treeNode[0]);
+					} else {
+						layer.msg("子文件被锁定，无法增加子文件");
+					}
+				};
+				
+				//删除文件
+				function remove(e) {
+					var zTree = $.fn.zTree.getZTreeObj("tree"),
+					nodes = zTree.getSelectedNodes(),
+					treeNode = nodes[0];
+					if (nodes.length == 0) {
+						layer.msg('操作前请选择一个文件');
+						return;
+					}else{
+						layer.open({
+						  	content: '你确认删除吗？',
+						  	btn: ['确定', '取消'],
+						  	yes: function(index, layero){
+								zTree.removeNode(treeNode, true);
+							    layer.close(index);
+						  	},
+						  	btn2: function(index, layero){
+							    console.log(index)
+							}
+						});
+					}	
+				};
+				// 转移操作
+				$('.layui-table .transfer').bind('click',function(e){
+					var ele = e.target;
+					var fileId = +$(ele).attr('data-id');
+					var zTree = $.fn.zTree.getZTreeObj("tree");
+					var cutfile = zTree.getNodeByParam('id',fileId);//要转移的文件
+					
+					layer.open({
+						title :'选择文件',
+						type: 2,
+						skin: '',
+						area:  ['300px', '400px'],
+						content: 'tree.html',
+						zIndex: layer.zIndex, 
+						success: function(layero){
+							layer.setTop(layero); 
+						},
+						btn: ['确定', '取消'],
+						yes: function(index, layero){
+								// 获取tree.html中选中的目标文件
+								var targetNodes = $("iframe")[0].contentWindow.getSelectNode();
+								if(targetNodes.length>0){
+									paste(cutfile,zTree.getNodeByParam('id',targetNodes[0].id));
+									layer.close(index);
+								}
+						},
+						btn2: function(index, layero){
+								console.log(index)
+						}
+					});
+
+				})
+				function paste(curSrcNode,targetNode) {
+					var zTree = $.fn.zTree.getZTreeObj("tree");
+					if (curSrcNode === targetNode) {
+						layer.msg("不能移动，文件与 目标文件 相同");
+						return;
+					} else if ((!!targetNode && curSrcNode.parentTId === targetNode.tId) || (!targetNode && !curSrcNode.parentTId)) {
+						layer.msg("不能移动，文件 已经存在于 目标文件中");
+						return;
+					} else {
+						targetNode = zTree.moveNode(targetNode, curSrcNode, "inner");
+						if (!targetNode) {
+							alert("不能移动，文件 已经存在于 目标文件中");
+						}
+						targetNode = curSrcNode;
+					}
+					delete targetNode.isCur;
+					zTree.selectNode(targetNode);
+				}
+				$(document).ready(function(){
+					$.fn.zTree.init($("#tree"), setting, zNodes);
+					$("#addLeaf").bind("click", {isParent:false}, add);
+					$("#remove").bind("click", remove);
+				});
+				
+				element.on('nav(demo)', function(data) {
+					console.log(data);
+				});
+				
+				laypage({
+					cont: 'page-list',
+					pages: 100, //总页数
+					skin: '#006e53',
+					skip: true,
+					first: false,
+					last: false,
+					jump: function(obj, first) {//页码跳转
+						if(!first) {
+							//layer.msg('第 '+ obj.curr +' 页');
+						}
+					}
+				});
+			});
+		}
+	</script>
+
+</html>
