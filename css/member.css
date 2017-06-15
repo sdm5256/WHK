@@ -158,10 +158,10 @@
 .main .member .list-det ul.lists  li .self-msg .sex-type{
 	position: absolute;
 	top: 0px;
-	left: 80px;
+	left: 50px;
 	z-index: 1;
 }
-.main .member .list-det ul.lists  li .self-msg .sex span{
+.main .member .list-det ul.lists  li .self-msg span{
 	padding: 0px 8px;
 }
 /*修改密码*/

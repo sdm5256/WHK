@@ -390,20 +390,19 @@ header .layui-nav-child dd {
 	padding-bottom: 10px;
 }
 
-.footer .fd-link .fd-title span {
-	color: #666;
+.footer .fd-link .fd-title a{
+	color: #999;
 	font-size: 14px;
 	padding-right: 34px;
+	cursor: pointer;
 }
 
-.footer .fd-link a {
-	font-size: 14px;
+.footer .fd-link .fd-title .active{
+	color: #666;
 }
-
-.footer .fd-link .fd-title a {
-	color: #999;
+.footer .fd-link .hide {
+	display: none;
 }
-
 .footer .fd-link .fd-list {
 	word-break: keep-all;
 }

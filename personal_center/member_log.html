@@ -252,10 +252,10 @@
 		<div class="footer">
 			<div class="fd-link">
 				<div class="fd-title">
-					<span>友情链接</span>
-					<a href="javascript:;">孔子学院</a>
+					<a class="active" type="0">友情链接</a>
+					<a class="" type="1">孔子学院</a>
 				</div>
-				<div class="fd-list">
+				<div class="fd-list lt1">
 					<a href="javascript:;">中华人民共和国教育部</a>
 					<a href="javascript:;">中华人民共和国文化部</a>
 					<a href="javascript:;">国家新闻出版广电总局</a>
@@ -267,6 +267,19 @@
 					<a href="javascript:;">宁夏大学</a>
 					<a href="javascript:;">北京外国语大学</a>
 					<a href="javascript:;">北京语言大学</a>
+				</div>
+				<div class="fd-list hide lt2">
+					<a href="javascript:;">阿联酋迪拜大学孔子学院</a>
+					<a href="javascript:;">阿联酋扎耶德大学孔子学院</a>
+					<a href="javascript:;">埃及开罗大学孔子学院</a>
+					<a href="javascript:;">埃及苏伊士运河大学孔子学院</a>
+					<a href="javascript:;">巴林王国巴林大学孔子学院</a>
+					<a href="javascript:;">黎巴嫩圣约瑟夫大学孔子学院</a>
+					<a href="javascript:;">摩洛哥哈桑二世大学孔子学院</a>
+					<a href="javascript:;">摩洛哥穆罕默德五世大学孔子学院</a>
+					<a href="javascript:;">苏丹喀土穆大学孔子学院</a>
+					<a href="javascript:;">约旦安曼TAG孔子学院</a>
+					<a href="javascript:;">约旦费城大学孔子学院</a>
 				</div>
 			</div>
 			<div class="ft-bg">
@@ -317,6 +330,20 @@
 							//页码跳转
 							//layer.msg('第 '+ obj.curr +' 页');
 						}
+					}
+				});
+				//底部 孔子学院切换
+				$('.footer .fd-title').bind('click',function(e){
+					var elem = e.target;
+					var type = +$(elem).attr('type');
+					$(elem).addClass('active');
+					$(elem).siblings().removeClass('active');
+					if(type==0){
+						$('.footer .lt1').show();
+						$('.footer .lt2').hide();
+					}else{
+						$('.footer .lt1').hide();
+						$('.footer .lt2').show();
 					}
 				});
 			});

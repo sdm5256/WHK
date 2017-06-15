@@ -48,8 +48,8 @@ window.onload = function() {
 					mapLocation: {
 						x: '-800',
 						y: '-260',
-						height: '2200',
-						width: '2200'
+						height: '2000',
+						width: '2000'
 					},
 
 					data: [{
@@ -627,6 +627,7 @@ window.onload = function() {
 		autoPlay:true,
 		loop:'false'
 	});
+	
 	/*layui初始化*/
 	layui.use(['element', 'jquery', 'laypage', 'layer'], function() {
 		var $ = layui.jquery,
@@ -636,6 +637,19 @@ window.onload = function() {
 		element.on('nav(demo)', function(data) {
 			console.log(data);
 		});
-		
+		//底部 孔子学院切换
+		$('.footer .fd-title').bind('click',function(e){
+			var elem = e.target;
+			var type = +$(elem).attr('type');
+			$(elem).addClass('active');
+			$(elem).siblings().removeClass('active');
+			if(type==0){
+				$('.footer .lt1').show();
+				$('.footer .lt2').hide();
+			}else{
+				$('.footer .lt1').hide();
+				$('.footer .lt2').show();
+			}
+		});
 	});
 }

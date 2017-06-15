@@ -122,14 +122,14 @@
 					<div class="lt-ctent">
 						<div class="nav-list left">
 							<ul class="layui-nav layui-nav-tree" lay-filter="test">
-								<li class="layui-nav-item layui-nav-itemed">
+								<li class="list-item">
 									<a href="javascript:;">孔院动态</a>
 								</li>
-								<li class="layui-nav-item">
+								<li class="list-item">
 									<a href="kyyj.html">孔院研究</a>
 								</li>
-								<li class="layui-nav-item">
-									<a href="javascript:;">阿拉伯国家孔子学院</a>
+								<li class="list-item">
+									<a class="active" href="javascript:;">阿拉伯国家孔子学院<i class="arrow layui-icon">&#xe61a;</i></a>
 									<dl class="layui-nav-child">
 								      	<dd><a href="javascript:;">阿联酋迪拜大学孔子学院</a></dd>
 								      	<dd><a href="javascript:;">阿联酋扎耶德大学孔子学院</a></dd>
@@ -208,10 +208,10 @@
 		<div class="footer">
 			<div class="fd-link">
 				<div class="fd-title">
-					<span>友情链接</span>
-					<a href="javascript:;">孔子学院</a>
+					<a class="active" type="0">友情链接</a>
+					<a class="" type="1">孔子学院</a>
 				</div>
-				<div class="fd-list">
+				<div class="fd-list lt1">
 					<a href="javascript:;">中华人民共和国教育部</a>
 					<a href="javascript:;">中华人民共和国文化部</a>
 					<a href="javascript:;">国家新闻出版广电总局</a>
@@ -223,6 +223,19 @@
 					<a href="javascript:;">宁夏大学</a>
 					<a href="javascript:;">北京外国语大学</a>
 					<a href="javascript:;">北京语言大学</a>
+				</div>
+				<div class="fd-list hide lt2">
+					<a href="javascript:;">阿联酋迪拜大学孔子学院</a>
+					<a href="javascript:;">阿联酋扎耶德大学孔子学院</a>
+					<a href="javascript:;">埃及开罗大学孔子学院</a>
+					<a href="javascript:;">埃及苏伊士运河大学孔子学院</a>
+					<a href="javascript:;">巴林王国巴林大学孔子学院</a>
+					<a href="javascript:;">黎巴嫩圣约瑟夫大学孔子学院</a>
+					<a href="javascript:;">摩洛哥哈桑二世大学孔子学院</a>
+					<a href="javascript:;">摩洛哥穆罕默德五世大学孔子学院</a>
+					<a href="javascript:;">苏丹喀土穆大学孔子学院</a>
+					<a href="javascript:;">约旦安曼TAG孔子学院</a>
+					<a href="javascript:;">约旦费城大学孔子学院</a>
 				</div>
 			</div>
 			<div class="ft-bg">
@@ -258,7 +271,24 @@
 				element.on('nav(demo)', function(data) {
 					console.log(data);
 				});
-
+				//中间 左侧 导航栏 
+				$('.content .list-item a').bind('click',function(e){
+					e.stopPropagation();
+					var elem = e.target;
+					$('.content .list-item .active').removeClass('active');
+					$(elem).addClass('active');
+				})
+				$('.content .list-item .arrow').bind('click',function(e){
+					e.stopPropagation();
+					var elem = e.target;
+					var type = $(elem).parent().next().css('display');
+					if(type && type=='none'){
+						$(elem).parent().next().show();
+					}else{
+						$(elem).parent().next().hide();
+					}
+				});
+				// 分页条
 				laypage({
 					cont: 'page-list',
 					pages: 100,
@@ -271,6 +301,20 @@
 							//页码跳转
 							//layer.msg('第 '+ obj.curr +' 页');
 						}
+					}
+				});
+				//底部 孔子学院切换
+				$('.footer .fd-title').bind('click',function(e){
+					var elem = e.target;
+					var type = +$(elem).attr('type');
+					$(elem).addClass('active');
+					$(elem).siblings().removeClass('active');
+					if(type==0){
+						$('.footer .lt1').show();
+						$('.footer .lt2').hide();
+					}else{
+						$('.footer .lt1').hide();
+						$('.footer .lt2').show();
 					}
 				});
 			});

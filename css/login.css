@@ -18,8 +18,19 @@
 .main .member-login .loginbg > form{
 	margin: 20px 50px 0px 0px;
 }
+.main .member-login .loginbg .layui-form-item{
+	position: relative;
+}
 .main .member-login .loginbg .identify-code{
-	width: 100px;
+	width: 90px;
+}
+.main .member-login .loginbg .codeimg {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	height: 38px;
+	width: 90px;
+	border: 1px solid red;
 }
 .main .member-login .loginbg .layui-btn{
 	background: #006E53;
