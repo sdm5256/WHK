@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="layui/css/layui.css" media="all">
 		<link rel="stylesheet" href="css/conmmon.css" media="all">
 		<link rel="stylesheet" href="css/ydyl.css" media="all">
+		<link rel="stylesheet" href="css/search_result.css" media="all">
 	</head>
 
 	<body>
@@ -228,79 +229,214 @@
 				<div class="location">
 					<span>当前位置：</span>
 					<span class="layui-breadcrumb">
-					  <a href="">一带一路上的文化</a>
-					  <a href="">国际新闻</a>
+					  <a href="">检索</a>
 					</span>
 				</div>
 				<div class="content">
 					<div class="lt-ctent">
+						<!--
+                        	描述： 左侧导航栏
+                        -->
 						<div class="nav-list left">
-							<ul class="layui-nav layui-nav-tree" lay-filter="test">
-								<li class="list-item">
-									<a class="active" href="ydyl.html">一带一路资讯</a>
-								</li>
-								<li class="list-item">
-									<a href="ydyl_cultrue.html">一带一路上的文化</a>
-								</li>
-								<li class="list-item">
-									<a href="ydyl_wyjl.html">文艺交流</a>
-								</li>
-								<li class="list-item">
-									<a href="ydyl_xsjl.html">学术交流</a>
-								</li>
-							</ul>
+							<div class="result">
+								<div class="result-title">
+									结果中筛选
+								</div>
+								<ul class="result-list">
+									<li class="iterm">
+										<div class="iterm-title">
+											学科分类  <span class="title-icon icon-down" data-type='0'>展开</span>
+										</div>
+										<ul class="select-list">
+											<li><span class="select-icon " data-type="0"></span><a>宗教（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文化（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>艺术（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文学（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>语言（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>历史（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>地理（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>民族学、民族史志（13412）</a></li>
+										</ul>
+									</li>
+									<li class="iterm">
+										<div class="iterm-title">
+											关键词  <span class="title-icon icon-down" data-type='0'>展开</span>
+										</div>
+										<ul class="select-list">
+											<li><span class="select-icon " data-type="0"></span><a>宗教（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文化（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>艺术（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文学（13412）</a></li>
+										</ul>
+									</li>
+									<li class="iterm">
+										<div class="iterm-title">
+											作者  <span class="title-icon icon-down" data-type='0'>展开</span>
+										</div>
+										<ul class="select-list">
+											<li><span class="select-icon " data-type="0"></span><a>宗教（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文化（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>艺术（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文学（13412）</a></li>
+										</ul>
+									</li>
+									<li class="iterm">
+										<div class="iterm-title">
+											语言  <span class="title-icon icon-down" data-type='0'>展开</span>
+										</div>
+										<ul class="select-list">
+											<li><span class="select-icon " data-type="0"></span><a>宗教（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文化（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>艺术（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文学（13412）</a></li>
+										</ul>
+									</li>
+									<li class="iterm">
+										<div class="iterm-title">
+											年份  <span class="title-icon icon-down" data-type='0'>展开</span>
+										</div>
+										<ul class="select-list">
+											<li><span class="select-icon " data-type="0"></span><a>宗教（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文化（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>艺术（13412）</a></li>
+											<li><span class="select-icon " data-type="0"></span><a>文学（13412）</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<div class="list-det right">
-							<ul class="lists">
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-								<li>
-									<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
-								</li>
-							</ul>
+							<div class="layui-tab layui-tab-brief cultrue-tab" lay-filter="docDemoTabBrief">
+								<!-- 
+									tab 头
+								-->
+								<ul class="layui-tab-title">
+									<li class="layui-this">文章</li>
+									<li>期刊</li>
+									<li>图书</li>
+									<li>多媒体</li>
+								</ul>
+								<div class="layui-form-item lt-search">
+									<div class="layui-input-inline">
+										<input id="search-ct" type="text" name="searchCont" placeholder="请输入检索内容" autocomplete="off" class="layui-input">
+									</div>
+									<div id="" class="layui-form-mid layui-word-aux">二次检索</div>
+								</div>
+								<div class="layui-tab-content">
+									<!--
+                                    	描述：内容切换
+                                    -->
+                                    <div class="saixuan">
+                                    	<a class="chuban" data-type='0'>出版时间<i></i></a><a class="gengxin" data-type='0'>更新时间<i></i></a>
+                                    </div>
+									<div class="layui-tab-item layui-show">
+										<ul class="lists">
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="layui-tab-item">
+										<ul class="lists">
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="layui-tab-item">
+										<ul class="lists">
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="layui-tab-item">
+										<ul class="lists">
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+											<li>
+												<a href=""><span>走在古今丝路上的中阿交流</span><span>2010-02-21</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--
+								描述： 分页条
+							-->
 							<div class="page">
 								<div id="page-list"></div>
 							</div>
@@ -367,32 +503,51 @@
 	<script>
 		window.onload = function() {
 
-			layui.use(['element', 'jquery', 'laypage', 'layer','form','laydate'], function() {
+			layui.use(['element', 'jquery', 'laypage','form', 'layer','laydate'], function() {
 				var $ = layui.jquery,
 					laypage = layui.laypage,
 					layer = layui.layer,
 					laydate = layui.laydate,
-					element = layui.element(),
-					form = layui.form();
+					form = layui.form(),
+					element = layui.element();
 				element.on('nav(demo)', function(data) {
 					console.log(data);
 				});
 				//中间 左侧 导航栏 
-				$('.content .list-item a').bind('click',function(e){
-					e.stopPropagation();
+				var staus = true;
+				$('.result .title-icon').bind('click',function(e){
 					var elem = e.target;
-					$('.content .list-item .active').removeClass('active');
-					$(elem).addClass('active');
+					var type = +$(elem).attr('data-type');
+					if(type==0){
+						$(elem).attr('data-type','1');
+						$(elem).removeClass('icon-down').addClass('icon-up').text('收起');
+						$(elem).parent().next().slideDown();
+					}else{
+						$(elem).attr('data-type','0');
+						$(elem).removeClass('icon-up').addClass('icon-down').text('展开');
+						$(elem).parent().next().slideUp();
+					}
 				});
-				
+				$('.result .select-list .select-icon').bind('click',function(e){
+					var elem = e.target;
+					var type = +$(elem).attr('data-type');
+					if(type==0){
+						$(elem).attr('data-type','1');
+						$(elem).removeClass('select-icon').addClass('selected-icon');
+					}else{
+						$(elem).attr('data-type','0');
+						$(elem).removeClass('selected-icon').addClass('select-icon');
+					}
+				});
+				// 分页条控制
 				laypage({
-					cont: 'page-list',
-					pages: 100,
+					cont: 'page-list', //目标元素
+					pages: 100, //总页数
 					skin: '#006e53',
 					skip: true,
 					first: false,
 					last: false,
-					jump: function(obj, first) {
+					jump: function(obj, first) { //点击页码跳转函数
 						if(!first) {
 							//页码跳转
 							//layer.msg('第 '+ obj.curr +' 页');
@@ -400,15 +555,15 @@
 					}
 				});
 				//底部 孔子学院切换
-				$('.footer .fd-title').bind('click',function(e){
+				$('.footer .fd-title').bind('click', function(e) {
 					var elem = e.target;
 					var type = +$(elem).attr('type');
 					$(elem).addClass('active');
 					$(elem).siblings().removeClass('active');
-					if(type==0){
+					if(type == 0) {
 						$('.footer .lt1').show();
 						$('.footer .lt2').hide();
-					}else{
+					} else {
 						$('.footer .lt1').hide();
 						$('.footer .lt2').show();
 					}
@@ -452,10 +607,18 @@
 					$('#add-select1').hide();
 					$('#add-select2').hide();
 				});
-				//search表单提交监听
-				$('#searchRrsult').on('click',function(){
-					
-				})
+				// 排序
+				$('.saixuan>a').bind('click',function(e){
+					var elem = e.target;
+					var type = +$(elem).attr('data-type');
+					if(type==0){
+						$(elem).attr('data-type','1');
+						$(elem).addClass('revers');
+					}else{
+						$(elem).attr('data-type','0');
+						$(elem).removeClass('revers');
+					}
+				});
 			});
 		}
 	</script>
