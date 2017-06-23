@@ -133,7 +133,7 @@
 							</ul>
 							<div class="handle-btn">
 								<button class="layui-btn btn1">在线阅读</button><br />
-								<button class="layui-btn  layui-btn-primary btn2">加入收藏</button>
+								<button class="layui-btn  layui-btn-primary btn2 collect">加入收藏</button>
 							</div>
 						</div>
 						<p>
@@ -202,6 +202,7 @@
 	</body>
 	<script src="layui/layui.js"></script>
 	<script>
+		'usestrict';
 		window.onload = function() {
 
 			layui.use(['element', 'jquery', 'laypage', 'layer'], function() {
@@ -226,7 +227,35 @@
 						$('.footer .lt2').show();
 					}
 				});
-				
+				// 收藏操作
+				$('.handle-btn .collect').bind('click',function(e){
+					var ele = e.target;
+					
+					layer.open({
+						title :'选择文件',
+						type: 2,
+						skin: '',
+						area:  ['300px', '400px'],
+						content: 'personal_center/tree.html',
+						zIndex: layer.zIndex, 
+						success: function(layero){
+							layer.setTop(layero); 
+						},
+						btn: ['确定', '取消'],
+						yes: function(index, layero){						
+								// 获取tree.html中选中的目标文件
+								var targetNodes = $("iframe")[0].contentWindow.getSelectNode();
+								if(targetNodes.length>0){
+									// targetNodes[0]目标文件
+									layer.close(index);
+								}
+						},
+						btn2: function(index, layero){
+								
+						}
+					});
+
+				})
 			});
 		}
 	</script>
